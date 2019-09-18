@@ -1,0 +1,11 @@
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\bin\Debug\netcoreapp2.2\KartochnayaIgra_homew.deps.json
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\bin\Debug\netcoreapp2.2\KartochnayaIgra_homew.runtimeconfig.json
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\bin\Debug\netcoreapp2.2\KartochnayaIgra_homew.runtimeconfig.dev.json
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\bin\Debug\netcoreapp2.2\KartochnayaIgra_homew.dll
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\bin\Debug\netcoreapp2.2\KartochnayaIgra_homew.pdb
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\obj\Debug\netcoreapp2.2\KartochnayaIgra_homew.csprojAssemblyReference.cache
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\obj\Debug\netcoreapp2.2\KartochnayaIgra_homew.csproj.CoreCompileInputs.cache
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\obj\Debug\netcoreapp2.2\KartochnayaIgra_homew.AssemblyInfoInputs.cache
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\obj\Debug\netcoreapp2.2\KartochnayaIgra_homew.AssemblyInfo.cs
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\obj\Debug\netcoreapp2.2\KartochnayaIgra_homew.dll
+C:\Users\home\source\repos\KartochnayaIgra_homew\KartochnayaIgra_homew\obj\Debug\netcoreapp2.2\KartochnayaIgra_homew.pdb
