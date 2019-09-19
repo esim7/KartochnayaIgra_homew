@@ -46,7 +46,7 @@ namespace KartochnayaIgra_homew
                 for (int i = 0; i < Players.Count; i++)
                 {
                     Players[i].PlayerCards.Add(CardDeck.Deck[0]);
-                    Players[i].PointCount++;
+                    Players[i].PointCount = Players[i].PlayerCards.Count;
                     CardDeck.Deck.Remove(CardDeck.Deck[0]);
                 }
         }
@@ -72,6 +72,7 @@ namespace KartochnayaIgra_homew
             }
             while(Players[0].PlayerCards.Count != 0 || Players[1].PlayerCards.Count != 0)
             {
+                Console.Clear();
                 Console.SetCursorPosition(10, 8);
                 Console.WriteLine(Players[0].Name + " нажмите на любую кнопку чтобы сделать ход\n");                
                 Console.ReadKey();
@@ -94,6 +95,29 @@ namespace KartochnayaIgra_homew
                 Console.WriteLine(Players[1].PlayerCards[0].CardSuit);
                 Console.SetCursorPosition(70, 13);
                 Console.WriteLine(Players[1].PlayerCards[0].CardType);
+                
+                if((int)Players[0].PlayerCards[0].CardType > (int)Players[1].PlayerCards[0].CardType)
+                {
+                    Players[0].PlayerCards.Add(Players[1].PlayerCards[0]);
+                    Players[0].PlayerCards.Add(Players[0].PlayerCards[0]);
+                    Players[0].PlayerCards.Remove(Players[0].PlayerCards[0]);
+                    Players[1].PlayerCards.Remove(Players[1].PlayerCards[0]);
+                    Players[0].PointCount++;
+                    Players[1].PointCount--;
+                    Console.SetCursorPosition(46, 20);
+                    Console.WriteLine("Раунд выйграл игрок " + Players[0].Name);
+                }
+                else
+                {
+                    Players[1].PlayerCards.Add(Players[0].PlayerCards[0]);
+                    Players[1].PlayerCards.Add(Players[1].PlayerCards[0]);
+                    Players[1].PlayerCards.Remove(Players[1].PlayerCards[0]);
+                    Players[0].PlayerCards.Remove(Players[0].PlayerCards[0]);
+                    Console.SetCursorPosition(46, 20);
+                    Console.WriteLine("Раунд выйграл игрок " + Players[1].Name);
+                    Players[1].PointCount++;
+                    Players[0].PointCount--;
+                }
                 Console.ReadKey();
             }
         }
