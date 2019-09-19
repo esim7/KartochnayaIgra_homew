@@ -6,16 +6,16 @@ namespace KartochnayaIgra_homew
 {
     public class CardDeck
     {
-        List<Card> Deck { get; set; }
+        public List<Card> Deck { get; set; }
 
         public CardDeck()
         {
             Deck = new List<Card>
             {
-                new Card("ПИКИ", "6"), new Card("ПИКИ", "7"), new Card("ПИКИ", "8"), new Card("ПИКИ", "9"), new Card("ПИКИ", "10"), new Card("ПИКИ", "ВАЛЕТ"), new Card("ПИКИ", "ДАМА"), new Card("ПИКИ", "КОРОЛЬ"), new Card("ПИКИ", "ТУЗ"),
-                new Card("ЧЕРВИ", "6"), new Card("ЧЕРВИ", "7"), new Card("ЧЕРВИ", "8"), new Card("ЧЕРВИ", "9"), new Card("ЧЕРВИ", "10"), new Card("ЧЕРВИ", "ВАЛЕТ"), new Card("ЧЕРВИ", "ДАМА"), new Card("ЧЕРВИ", "КОРОЛЬ"), new Card("ЧЕРВИ", "ТУЗ"),
-                new Card("КРЕСТИ", "6"), new Card("КРЕСТИ", "7"), new Card("КРЕСТИ", "8"), new Card("КРЕСТИ", "9"), new Card("КРЕСТИ", "10"), new Card("КРЕСТИ", "ВАЛЕТ"), new Card("КРЕСТИ", "ДАМА"), new Card("КРЕСТИ", "КОРОЛЬ"), new Card("КРЕСТИ", "ТУЗ"),
-                new Card("БУБЕН", "6"), new Card("БУБЕН", "7"), new Card("БУБЕН", "8"), new Card("БУБЕН", "9"), new Card("БУБЕН", "10"), new Card("БУБЕН", "ВАЛЕТ"), new Card("БУБЕН", "ДАМА"), new Card("БУБЕН", "КОРОЛЬ"), new Card("БУБЕН", "ТУЗ"),
+                new Card("ПИКИ", CardType.ШЕСТЬ), new Card("ПИКИ", CardType.СЕМЬ), new Card("ПИКИ", CardType.ВОСЕМЬ), new Card("ПИКИ", CardType.ДЕВЯТЬ), new Card("ПИКИ", CardType.ДЕСЯТЬ), new Card("ПИКИ", CardType.ВАЛЕТ), new Card("ПИКИ", CardType.ДАМА), new Card("ПИКИ", CardType.КОРОЛЬ), new Card("ПИКИ", CardType.ТУЗ),
+                new Card("ЧЕРВИ", CardType.ШЕСТЬ), new Card("ЧЕРВИ", CardType.СЕМЬ), new Card("ЧЕРВИ", CardType.ВОСЕМЬ), new Card("ЧЕРВИ", CardType.ДЕВЯТЬ), new Card("ЧЕРВИ", CardType.ДЕСЯТЬ), new Card("ЧЕРВИ", CardType.ВАЛЕТ), new Card("ЧЕРВИ", CardType.ДАМА), new Card("ЧЕРВИ", CardType.КОРОЛЬ), new Card("ЧЕРВИ", CardType.ТУЗ),
+                new Card("КРЕСТИ", CardType.ШЕСТЬ), new Card("КРЕСТИ", CardType.СЕМЬ), new Card("КРЕСТИ", CardType.ВОСЕМЬ), new Card("КРЕСТИ", CardType.ДЕВЯТЬ), new Card("КРЕСТИ", CardType.ДЕСЯТЬ), new Card("КРЕСТИ", CardType.ВАЛЕТ), new Card("КРЕСТИ", CardType.ДАМА), new Card("КРЕСТИ", CardType.КОРОЛЬ), new Card("КРЕСТИ", CardType.ТУЗ),
+                new Card("БУБЕН", CardType.ШЕСТЬ), new Card("БУБЕН", CardType.СЕМЬ), new Card("БУБЕН", CardType.ВОСЕМЬ), new Card("БУБЕН", CardType.ДЕВЯТЬ), new Card("БУБЕН", CardType.ДЕСЯТЬ), new Card("БУБЕН", CardType.ВАЛЕТ), new Card("БУБЕН", CardType.ДАМА), new Card("БУБЕН", CardType.КОРОЛЬ), new Card("БУБЕН", CardType.ТУЗ),
             };
         }
     }

@@ -10,11 +10,11 @@ namespace KartochnayaIgra_homew
         public int PointCount { get; set; }
         public List<Card> PlayerCards { get; set; }
 
-        public Player(string name)
+        public Player()
         {
-            Name = name;
-            PointCount = 0;
+            Name = string.Empty;
             PlayerCards = new List<Card>();
+            PointCount = 0;
         }
 
         public void ShowMyCards()
