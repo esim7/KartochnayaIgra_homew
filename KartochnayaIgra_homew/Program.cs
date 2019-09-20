@@ -20,15 +20,7 @@ namespace KartochnayaIgra_homew
                 {
                     case "1":
                         {
-
                             game.PlayerInitialization();
-                            int num = random.Next(0, 2);
-                            Console.WriteLine(num);
-                            var buf = game.Players[0];
-                            game.Players[0] = game.Players[1];
-                            game.Players[1] = buf;
-                            Console.WriteLine(game.Players[0].Name);
-                            Console.WriteLine(game.Players[1].Name);
                         }
                         break;
                     case "2":
@@ -40,6 +32,7 @@ namespace KartochnayaIgra_homew
                         {
                             game.DealCards();
                             game.StartGame();
+                            game.ShowWinerPlayer();
                         }
                         break;
                     case "4":
@@ -49,20 +42,7 @@ namespace KartochnayaIgra_homew
                         break;
                 }
                 Console.ReadLine();
-            } while (isActive != false);
-            //Game game = new Game();
-            //game.ShowCardDeck();
-            //Console.WriteLine("___________________________________________");
-            //game.ShufflingCards();
-            //game.ShowCardDeck();
-            //game.DealCards();
-            ////Console.WriteLine("Карты после тасовки");
-            ////game.ShowCardDeck();
-            ////Console.WriteLine("Карты игрока 1");
-            ////game.Players[0].ShowMyCards();
-            ////Console.WriteLine("Карты игрока 2");
-            ////game.Players[1].ShowMyCards();
-            ////Console.ReadKey();
+            } while (isActive != false && game.isGameActive != false);
         }
     }
 }

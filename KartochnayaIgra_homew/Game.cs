@@ -11,6 +11,7 @@ namespace KartochnayaIgra_homew
         public Random random = new Random();
         public List<Player> Players { get; set; }
         public CardDeck CardDeck { get; set; }
+        public bool isGameActive = true;
 
         public void ShufflingCards()//перетасовка карт
         {
@@ -70,7 +71,7 @@ namespace KartochnayaIgra_homew
                     Players[1] = buf;
                 }
             }
-            while(Players[0].PlayerCards.Count != 0 || Players[1].PlayerCards.Count != 0)
+            while(Players.Count > 1)
             {
                 Console.Clear();
                 Console.SetCursorPosition(10, 8);
@@ -106,6 +107,8 @@ namespace KartochnayaIgra_homew
                     Players[1].PointCount--;
                     Console.SetCursorPosition(46, 20);
                     Console.WriteLine("Раунд выйграл игрок " + Players[0].Name);
+                    if (Players[1].PlayerCards.Count == 0)
+                        Players.RemoveAt(0);
                 }
                 else
                 {
@@ -117,6 +120,8 @@ namespace KartochnayaIgra_homew
                     Console.WriteLine("Раунд выйграл игрок " + Players[1].Name);
                     Players[1].PointCount++;
                     Players[0].PointCount--;
+                    if (Players[0].PlayerCards.Count == 0)
+                        Players.RemoveAt(1);
                 }
                 Console.ReadKey();
             }
@@ -128,6 +133,18 @@ namespace KartochnayaIgra_homew
             {
                 Console.WriteLine(card.CardSuit + "  " + card.CardType);
             }
+        }
+
+        public void ShowWinerPlayer()
+        {
+            Console.Clear();
+            Console.SetCursorPosition(45, 10);
+            Console.ForegroundColor = ConsoleColor.Red;
+            foreach (Player player in Players)
+            { 
+                Console.WriteLine($"Игрок {player.Name} победил");
+            }
+            isGameActive = false;
         }
     }
 }

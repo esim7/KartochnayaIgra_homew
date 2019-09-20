@@ -19,6 +19,7 @@ namespace KartochnayaIgra_homew
 
         public void ShowMyCards()
         {
+            
             foreach(Card card in PlayerCards)
             {
                 Console.WriteLine(card.CardSuit + "  " + card.CardType);
